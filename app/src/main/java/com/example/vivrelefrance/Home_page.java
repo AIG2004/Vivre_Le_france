@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class Home_page extends AppCompatActivity {
@@ -24,8 +25,13 @@ Button unit1,unit2,unit3,unit4,online;
         unit4=findViewById(R.id.unit4);
         online=findViewById(R.id.online_mode);
         online.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
+                if (Air.isAirplaneModeEnabled){
+                    Toast.makeText(Home_page.this,"Air_plane mode on , offline mode only",Toast.LENGTH_LONG).show();
+                   return;
+                }
                 Intent online_page=new Intent(Home_page.this, online_mode.class);
                 startActivity(online_page);
             }

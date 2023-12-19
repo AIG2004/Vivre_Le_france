@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.widget.Toast;
 
 public class Air_Plane extends BroadcastReceiver {
-
+    boolean isAirplaneModeEnabled;
     @Override
     public void onReceive(Context context, Intent intent) {
         if (Intent.ACTION_AIRPLANE_MODE_CHANGED.equals(intent.getAction())) {
-            boolean isAirplaneModeEnabled = intent.getBooleanExtra("state", false);
+             isAirplaneModeEnabled = intent.getBooleanExtra("state", false);
 
             if (isAirplaneModeEnabled) {
                 // Airplane mode is enabled
