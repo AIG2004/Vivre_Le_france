@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".online_mode">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Home Page"
+        android:text=" Online Mode"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,71 +61,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033" />
 
-    <Button
-        android:id="@+id/unit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="unit 2: colors"
-        android:textSize="25dp"
-        android:background="#EF4135"
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="215dp"
+        android:layout_height="54dp"
+        android:hint="Search for a french word"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.40" />
-    <Button
-        android:id="@+id/unit3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="unit 3: family "
-        android:textSize="25dp"
-        android:background="#EF4135"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintVertical_bias="0.364" />
 
     <Button
-        android:id="@+id/unit4"
+        android:id="@+id/searchbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="unit 4: animals"
-        android:textSize="25dp"
         android:background="#EF4135"
+        android:text="Search"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/unit1"
+        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="unit 1: numbers"
-        android:textSize="25dp"
         android:background="#EF4135"
+        android:text="Back To Home"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-    <Button
-        android:id="@+id/online_mode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter Online Mode"
-        android:textSize="25dp"
-        android:background="#EF4135"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
+        app:layout_constraintVertical_bias="0.725" />
 </androidx.constraintlayout.widget.ConstraintLayout>
