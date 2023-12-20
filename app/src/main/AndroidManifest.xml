@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,10 +15,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VivreLeFrance"
         tools:targetApi="31">
+        <activity
+            android:name=".animals_test"
+            android:exported="false" />
+        <activity
+            android:name=".family_test"
+            android:exported="false" />
+        <activity
+            android:name=".number_test"
+            android:exported="false" />
+        <activity
+            android:name=".color_test"
+            android:exported="false" />
+        <activity
+            android:name=".unit_4"
+            android:exported="false" />
+        <activity
+            android:name=".unit_3"
+            android:exported="false" />
+        <activity
+            android:name=".unit_2"
+            android:exported="false" />
+        <activity
+            android:name=".unit_1"
+            android:exported="false" />
+
         <receiver
             android:name=".internet_status"
             android:enabled="true"
-            android:exported="false"></receiver>
+            android:exported="false" />
 
         <service
             android:name=".Download"
@@ -47,7 +72,6 @@
                 <action android:name="android.intent.action.WEB_SEARCH" />
                 <action android:name="android.intent.action.AIRPLANE_MODE" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
